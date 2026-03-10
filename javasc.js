@@ -32,7 +32,7 @@ addBtn.addEventListener("click", function () { //Tuotteen lisäys listaan
     deleteBtn.textContent = "Poista";
 
     doneBtn.addEventListener("click", function () { //Valmis napin toiminnallisuus
-        li.classList.toggle("valmis");
+        li.classList.toggle("done");
         updateCounter();
     });
 
