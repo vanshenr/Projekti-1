@@ -59,10 +59,10 @@ filterButtons.forEach(btn => { //Suodattavat napit ja niiden toiminnallisuus
         items.forEach(item => {
             item.classList.remove("hidden");
 
-            if (filter === "vaiheessa" && item.classList.contains("valmis")) {
+            if (filter === "active" && item.classList.contains("done")) {
                 item.classList.add("hidden");
             }
-            if (filter === "valmis" && !item.classList.contains("valmis")) {
+            if (filter === "done" && !item.classList.contains("done")) {
                 item.classList.add("hidden");
             }
         });
