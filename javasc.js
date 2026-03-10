@@ -6,15 +6,15 @@ const errorMsg = document.getElementById("errorMsg");
 const counter = document.getElementById("counter");
 const filterButtons = document.querySelectorAll("#filter-buttons button");
 
-addBtn.addEventListener("click", function () { //Tuotteen lisäys listaan
-    const value = input.value.trim();
-    
 input.addEventListener("keydown", function (event) { //Enter näppäimellä lisääminen
     if (event.key === "Enter") {
         addBtn.click(); 
     }
 });
 
+addBtn.addEventListener("click", function () { //Tuotteen lisäys listaan
+    const value = input.value.trim();
+    
     if (value.length < 2) { //Merkkimäärän tarkistus
         errorMsg.textContent = "Tuotteessa pitää olla vähintään 2 merkkiä.";
         input.classList.add("error");
