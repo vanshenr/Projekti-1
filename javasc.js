@@ -1,4 +1,4 @@
-// Haetaan elementit
+//Haetaan elementit
 const input = document.getElementById("itemInput");
 const addBtn = document.getElementById("addBtn");
 const list = document.getElementById("shoppingList");
@@ -6,13 +6,12 @@ const errorMsg = document.getElementById("errorMsg");
 const counter = document.getElementById("counter");
 const filterButtons = document.querySelectorAll("#filter-buttons button");
 
-// Lisää tuote listaan
-addBtn.addEventListener("click", function () {
+addBtn.addEventListener("click", function () { //Tuotteen lisäys listaan
     const value = input.value.trim();
 
-    // Validointi
-    if (value.length < 2) {
-        errorMsg.textContent = "Syötteen tulee olla vähintään 2 merkkiä.";
+    
+    if (value.length < 2) { //Merkkimäärän tarkistus
+        errorMsg.textContent = "Tuotteessa pitää olla vähintään 2 merkkiä.";
         input.classList.add("error");
         return;
     }
@@ -20,8 +19,7 @@ addBtn.addEventListener("click", function () {
     errorMsg.textContent = "";
     input.classList.remove("error");
 
-    // Luodaan listaelementti
-    const li = document.createElement("li");
+    const li = document.createElement("li"); //Listan luominen
     li.className = "list-item";
 
     const textSpan = document.createElement("span");
@@ -33,14 +31,12 @@ addBtn.addEventListener("click", function () {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Poista";
 
-    // Valmis-nappi
-    doneBtn.addEventListener("click", function () {
-        li.classList.toggle("done");
+    doneBtn.addEventListener("click", function () { //Valmis napin toiminnallisuus
+        li.classList.toggle("valmis");
         updateCounter();
     });
 
-    // Poista-nappi
-    deleteBtn.addEventListener("click", function () {
+    deleteBtn.addEventListener("click", function () { //Poista napin toiminnallisuus
         li.remove();
         updateCounter();
     });
@@ -55,8 +51,7 @@ addBtn.addEventListener("click", function () {
     updateCounter();
 });
 
-// Suodatusnapit
-filterButtons.forEach(btn => {
+filterButtons.forEach(btn => { //Suodattavat napit ja niiden toiminnallisuus
     btn.addEventListener("click", function () {
         const filter = btn.dataset.filter;
         const items = document.querySelectorAll(".list-item");
@@ -64,18 +59,17 @@ filterButtons.forEach(btn => {
         items.forEach(item => {
             item.classList.remove("hidden");
 
-            if (filter === "active" && item.classList.contains("done")) {
+            if (filter === "vaiheessa" && item.classList.contains("valmis")) {
                 item.classList.add("hidden");
             }
-            if (filter === "done" && !item.classList.contains("done")) {
+            if (filter === "valmis" && !item.classList.contains("valmis")) {
                 item.classList.add("hidden");
             }
         });
     });
 });
 
-// Laskuri
-function updateCounter() {
+function updateCounter() { //Lasketaan jäljellä olevat tuotteet
     const activeCount = document.querySelectorAll(".list-item:not(.done)").length;
-    counter.textContent = "Aktiivisia tuotteita: " + activeCount;
+    counter.textContent = "Jäljellä olevat tuotteet: " + activeCount;
 }
