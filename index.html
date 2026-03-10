@@ -1,19 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple HTML Page</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Kauppalista</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Page</h1>
-    </header>
-    <main>
-        <p>This is a basic HTML page with linked CSS and JavaScript.</p>
-        <button id="clickMe">Click Me</button>
-    </main>
-    <script src="../js/javasc.js"></script>
+
+    <h1>Kauppalista</h1>
+
+    <div id="form-container">
+        <input type="text" id="itemInput" placeholder="Lisää tuote...">
+        <button id="addBtn">Lisää listaan</button>
+        <p id="errorMsg"></p>
+    </div>
+
+    <div id="filter-buttons">
+        <button data-filter="all">Kaikki</button>
+        <button data-filter="active">Aktiiviset</button>
+        <button data-filter="done">Valmiit</button>
+    </div>
+
+    <ul id="shoppingList"></ul>
+
+    <p id="counter"></p>
+
+    <script src="javasc.js"></script>
 </body>
 </html>
+
