@@ -1,58 +1,53 @@
-body {
+body { /* Taustaväri ja fontti */
     font-family: Arial, sans-serif;
     margin: 40px;
     background-color: #ffffff;
 }
-h1{
+h1{ /* Otsikon väri */
     color: rgb(0, 0, 0);
     
 }
 
-#form-container {
-    margin-bottom: 30px;
-}
-
-input {
+input { /* Lisäyskentän tyyli */
     padding: 10px;
     border: 3px solid #000000;
     border-radius: 10px;
     background-color:rgb(255, 255, 255);
 }
 
-input.error {
+input.error { /* Lisäyskentän väri jos alle 2 merkkiä */
     border-color: rgb(255, 0, 0);
 }
 
-#errorMsg {
+#errorMsg { /* Virheviestin väri ja koko */
     color: red;
     font-size: 20px;
 }
 
-#shoppingList {
-    list-style-type: none;
-    padding: 0;
+#shoppingList { /* Listan asettelu */
+    padding: 5px;
 }
 
-.list-item {
+.list-item { /* Listan kohteiden asettelu */
     display: flex;
     justify-content: space-between;
-    padding: 9px;
+    padding: 8px;
     border-bottom: 2px solid #000000;
 }
 
-.done {
+.done { /* Yliviivan tyyli ja väri */
     text-decoration: line-through;
     color: rgb(0, 0, 0);
 }
 
-button {
+button { /* Painikkeiden tyyli */
     margin-left: 10px;
     padding: 10px 10px;
     border-radius: 10px;
     background-color:rgb(255, 255, 255)
 }
 
-.hidden {
+.hidden {  /* Piilottaa tuotteita */
     display: none;
 }
 
