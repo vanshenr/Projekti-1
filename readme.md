@@ -1,52 +1,67 @@
-Projektin nimi ja tekijät
-Projektin nimi ja kaikki mukana olevat tekijät.
+Web-kehitys 1 (front end) TO00CD50-3001 kurssin Projekti 1: DOM-skriptaus
+Projektina yksinkertaisen TODO-listan luominen, joka on toteutettu kauppalistan muodossa. Projektin tekijä: Henri Vänskä
 
 Verkkolinkit:
-Pääset julkaistuun sovellukseen käsiksi osoitteessa google.com Linkki projektin videoesittelyyn google.com
+Pääset julkaistuun sovellukseen käsiksi osoitteessa https://kauppalistahv.netlify.app/
+Linkki projektin videoesittelyyn google.com
 
-Työn jakautuminen
-Miten työmäärä jaettiin? Kuka teki mitä? Miten yhteistyö sujui?
+Oma arvio työstä ja oman osaamisen kehittymisestä:
 
-Oma arvio työstä ja oman osaamisen kehittymisestä
-Mielestäni onnistuin... Parantamista olisi... Sovelluksesta jäi puuttumaan... Koen, että olen oppinut... Epäselväksi jäi... Antaisin itselleni pisteitä seuraavasti: xx/yy p
+Mielestäni onnistuin tekemään melko hyvin toimivan kauppalistan, jota jatkojalostamalla on mahdollista saada vieläkin paremmin toimivaksi.
+Parannettavaa jäi kauppalistan ulkoasusta, jota en mielestäni saanut kovinkaan näyttäväksi visuaalisesti.
+Sovellus toimii mielestäni muutoin varsin hyvin, mutta en löytänyt toimivaa ratkaisua kun tuote yliviivataan OK-painikkeella, niin yliviivaus tapahtuu myös "Poista" painikkeelle, jonka olisin halunnut jäävän ilman yliviivausta.
+Koen, että olen oppinut todella paljon lisää html/javascript toiminnasta ja onkin ollut mukava päästä hiomaan taitoja perusteita käsitelleiden kurssien jälkeen.
+Antaisin itselleni pisteitä seuraavasti: 8/10 p
 
-Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka
-Kurssi sekä lähiopetus ovat tuntuneet... Oppimistani tukisi jos...
+Kurssi on tähän mennessä ollut erittäin mieluisa ja tehtävät ovat olleet sopivat haastavia ottaen huomioon oman melko vaatimattoman ohjelmointiosaamisen.
+On ollut mukava saada onnistumisen elämyksiä harjoitteita tehdessä.
 
 Sisällysluettelo:
-Tietoja sovelluksesta
-[Tunnetut virheet/bugit](#Tunnetut virheet/bugit)
-Kuvakaappaukset
-Teknologiat
-Asennus
-Lähestymistapa
-Kiitokset
-Lisenssi
-Tietoja sovelluksesta
-[Projektin nimi] on sovellus, joka ...
+1 Tietoja sovelluksesta
+2 Tunnetut virheet/bugit
+3 Teknologiat
+4 Asennus
+5 Lähestymistapa
+6 Kiitokset
+7 Lisenssi
 
-Tunnetut virheet/bugit
-Kerro jos tiedät sovelluksessa olevan jotain, mikä ei toimi tai toimii heikosti
+1 Tietoja sovelluksesta
+Kauppalista on sovellus, johon voi syöttää erilaisia tuotteita "Lisää listaan"-painiketta painamalla tai tuotekenttään kirjoittaessa Enteriä painamalla. Mikäli tuote on syötetty virheellisesti eli se on alle 2 merkin mittainen, ilmestyy syöttökentän alapuolelle virheviesti ja syöttökentän reunukset muuttuvat punaiseksi. Vikaviesti ja syöttökentän punainen reunus katoavat kun tuote syötetään uudelleen oikein. Kun tuote on syötetty syöttökentän kautta listaan, tuotteen pystyy listasta halutessaan poistamaan tai merkitsemäään kerätyksi "OK"-painikkeella, jolloin tuote yliviivataan listalla. Listalla pystyy myös suodattamaan tuotteita "Jäljellä oleviin tuotteisiin" ja "Kerättyihin tuotteisiin". Listan alapuolella näkyy laskuri, joka näyttää jäljellä olevien tuotteiden lukumäärän.
 
-Kuvakaappaukset
-Lisää tähän vähintään yksi kuvakaappaus toimivasta sovelluksesta
-![Kirjoittaminen](https://unsplash.com/photos/VBPzRgd7gfc)
+2 Tunnetut virheet/bugit
+Poista näppäimen turha yliviivaus ostoslistassa.
+Puhelimen safari ja chrome selaimilla painikkeet näkyvät vain kirjaimin.
 
-Kuva: Kelly Sikkema
-
-Teknologiat
+3 Teknologiat
 Kuvaa, mitä teknologioita käytettiin ja mikä oli niiden rooli projektissasi.
 Käytin seuraavia teknologioita: html, css, ...
 
-Asennus
-Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön. Esimerkiksi:
+4 Asennus
+Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön.
+1 Mene selaimella osoitteeseen: https://kauppalistahv.netlify.app/
+2 Syötä "Lisää tuote..."-kenttään haluamasi tuote
+3 Haluamasi tuote ilmestyy ostoslistaan "Lisää tuote..."-kentän alapuolelle tuotelaskurin kera.
+4 Voit halutessasi "OK"-painikkeella yliviivata kerätyn tuotteen tai vaihtoehtoisesti "Poista"-painikkeella poistaa tuotteen listasta.
+5 Listassa on 3 eri näkymää: "Kaikki", "Jäljellä olevat" ja "Kerätyt". "Kaikki" näkymässä kaikki tuotteet ovat näkyvillä, "Jäljellä olevat" näkymästä on poistettu yliviivatut tuotteet (OK-painikkeella käsitellyt tuotteet) ja "Kerätyt" näkymässä näkyvät vain yliviivatut tuotteet (OK-painikkeella käsitellyt tuotteet)
+6 "Jäljellä olevat tuotteet"-laskuri näyttää jäljellä olevat tuotteet, eli siitä poistuvat "OK"-merkityt ja poistetut tuotteet
 
-lataa kaikki tiedostot ja avaa index.html selaimessasi
-lataa tai kloonaa repositorio
-suorita npm install
-...
-Kiitokset
+6 Kiitokset
 Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.
+HTML:
+https://www.w3schools.com/html/html_forms.asp Lomakekentän ja nappien mallina
+https://www.w3schools.com/html/html_attributes.asp id‑ ja class‑attribuutit DOMia varten
+CSS:
+https://www.w3schools.com/css/css_border.asp Virheellisen syötteen jälkeen punainen reunus
+https://www.w3schools.com/css/css_display_hide.asp .hidden { display: none; } suodatus
+https://www.w3schools.com/css/css_text_decoration.asp Kerättyjen tuotteiden yliviivaus
+https://www.w3schools.com/css/css_boxmodel.asp Input‑kenttien ja listaelementtien muotoilu
+Javascript:
+https://www.w3schools.com/howto/howto_js_trigger_button_enter.asp Enter-painikkeen toiminta tuotteen syötössä
+https://www.w3schools.com/js/js_htmldom_elements.asp DOM elementit
+https://www.w3schools.com/js/js_htmldom_events.asp addEventListener toiminnot
+https://www.w3schools.com/js/js_if_else.asp Ehtolauseet syötteen tarkastukseen ja suodatukseen
+https://mika-stenberg.gitbook.io/web-sovelluksia-javascriptin-avulla/4.-lomakkeiden-kaesittely/untitled	Syötteen tarkastus (väh.2merkkiä tai tyhjä)
+
 
 John Doe
 Beginners guide to BEM
