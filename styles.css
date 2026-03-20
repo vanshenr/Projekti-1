@@ -28,7 +28,7 @@ input.error { /* Lisäyskentän väri jos alle 2 merkkiä */
     padding: 5px;
 }
 
-.list-item { /* Listan kohteiden asettelu */
+.list-item { /* Listan tuotteiden asettelu */
     display: flex;
     justify-content: space-between;
     padding: 8px;

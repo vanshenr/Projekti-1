@@ -6,7 +6,6 @@ Pääset julkaistuun sovellukseen käsiksi osoitteessa https://kauppalistahv.net
 Linkki projektin videoesittelyyn google.com
 
 Oma arvio työstä ja oman osaamisen kehittymisestä:
-
 Mielestäni onnistuin tekemään melko hyvin toimivan kauppalistan, jota jatkojalostamalla on mahdollista saada vieläkin paremmin toimivaksi.
 Parannettavaa jäi kauppalistan ulkoasusta, jota en mielestäni saanut kovinkaan näyttäväksi visuaalisesti.
 Sovellus toimii mielestäni muutoin varsin hyvin, mutta en löytänyt toimivaa ratkaisua kun tuote yliviivataan OK-painikkeella, niin yliviivaus tapahtuu myös "Poista" painikkeelle, jonka olisin halunnut jäävän ilman yliviivausta.
@@ -33,8 +32,7 @@ Poista näppäimen turha yliviivaus ostoslistassa.
 Puhelimen safari ja chrome selaimilla painikkeet näkyvät vain kirjaimin.
 
 3 Teknologiat
-Kuvaa, mitä teknologioita käytettiin ja mikä oli niiden rooli projektissasi.
-Käytin seuraavia teknologioita: html, css, ...
+Käytin projektissa HTML koodia sovelluksen pohjana. CSS koodeilla tein puolestaan erilaisia tyylittelyjä ja muotoiluja sivulla näkyviin elementteihin ja teksteihin. Javascript oli käytössä kaikkien sovelluksen toiminnallisuuksien ohjelmoinnissa
 
 4 Asennus
 Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön.
@@ -45,8 +43,8 @@ Kirjoita lyhyet ohjeet sovelluksen käynnistämiseen ja käyttöön.
 5 Listassa on 3 eri näkymää: "Kaikki", "Jäljellä olevat" ja "Kerätyt". "Kaikki" näkymässä kaikki tuotteet ovat näkyvillä, "Jäljellä olevat" näkymästä on poistettu yliviivatut tuotteet (OK-painikkeella käsitellyt tuotteet) ja "Kerätyt" näkymässä näkyvät vain yliviivatut tuotteet (OK-painikkeella käsitellyt tuotteet)
 6 "Jäljellä olevat tuotteet"-laskuri näyttää jäljellä olevat tuotteet, eli siitä poistuvat "OK"-merkityt ja poistetut tuotteet
 
-6 Kiitokset
-Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.
+5 Kiitokset
+Lista lähteistä ja käytin lisäksi myös Microsoftin Copilot tekoälyä koodin rakenteiden ja toiminnallisuuksien testaamiseen, sekä ideointiin mahdollisista erilaisista vaihtoehdosta tutkien tekoälyn käyttämiä lähteitä.
 HTML:
 https://www.w3schools.com/html/html_forms.asp Lomakekentän ja nappien mallina
 https://www.w3schools.com/html/html_attributes.asp id‑ ja class‑attribuutit DOMia varten
@@ -62,10 +60,25 @@ https://www.w3schools.com/js/js_htmldom_events.asp addEventListener toiminnot
 https://www.w3schools.com/js/js_if_else.asp Ehtolauseet syötteen tarkastukseen ja suodatukseen
 https://mika-stenberg.gitbook.io/web-sovelluksia-javascriptin-avulla/4.-lomakkeiden-kaesittely/untitled	Syötteen tarkastus (väh.2merkkiä tai tyhjä)
 
-
-John Doe
-Beginners guide to BEM
 Lisenssi
-Valitse projektille lisenssi seuraamalla tätä opasta.
+MIT License
 
-Esimerkki: MIT-lisenssi @ tekijä
+Copyright (c) 2026 Henri Vänskä
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

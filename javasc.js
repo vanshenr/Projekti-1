@@ -45,11 +45,11 @@ addBtn.addEventListener("click", function () { //Tuotteen lisääminen listaan
         updateCounter(); //Laskurin päivitys
     });
 
-    li.appendChild(textSpan); //Tuotteen nimi listaan
-    li.appendChild(doneBtn); //OK-nappi listaan
-    li.appendChild(deleteBtn); //Poista-nappi listaan
+    li.appendChild(textSpan); //Tuotteen nimi listalle
+    li.appendChild(doneBtn); //OK-nappi listalle
+    li.appendChild(deleteBtn); //Poista-nappi listalle
 
-    list.appendChild(li); //Lisätään tuote listaan
+    list.appendChild(li); //Lisätään tuote listalle
 
     input.value = ""; //Syöttökentän tyhjennys ja laskurin päivitys
     updateCounter();
