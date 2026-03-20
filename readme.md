@@ -3,7 +3,7 @@ Projektina yksinkertaisen TODO-listan luominen, joka on toteutettu kauppalistan 
 
 Verkkolinkit:
 Pääset julkaistuun sovellukseen käsiksi osoitteessa https://kauppalistahv.netlify.app/
-Linkki projektin videoesittelyyn google.com
+Linkki projektin videoesittelyyn: https://video.laurea.fi/media/Projekti%201%20video/0_nnvz64i0
 
 Oma arvio työstä ja oman osaamisen kehittymisestä:
 Mielestäni onnistuin tekemään melko hyvin toimivan kauppalistan, jota jatkojalostamalla on mahdollista saada vieläkin paremmin toimivaksi.
