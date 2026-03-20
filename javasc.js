@@ -31,12 +31,12 @@ addBtn.addEventListener("click", function () { //Tuotteen lisäys listaan
     textSpan.textContent = value;
 
     const doneBtn = document.createElement("button");
-    doneBtn.textContent = "Valmis";
+    doneBtn.textContent = "OK";
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Poista";
 
-    doneBtn.addEventListener("click", function () { //Valmis napin toiminnallisuus
+    doneBtn.addEventListener("click", function () { //OK napin toiminnallisuus
         li.classList.toggle("done");
         updateCounter();
     });
