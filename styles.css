@@ -1,10 +1,10 @@
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
-    background-color: #e5e0e0;
+    background-color: #ffffff;
 }
 h1{
-    color: rgb(255, 21, 197);
+    color: rgb(0, 0, 0);
     
 }
 
@@ -14,13 +14,13 @@ h1{
 
 input {
     padding: 10px;
-    border: 3px solid #6e6b6b;
+    border: 3px solid #000000;
     border-radius: 10px;
-    background-color:rgb(252, 216, 248);
+    background-color:rgb(255, 255, 255);
 }
 
 input.error {
-    border-color: red;
+    border-color: rgb(255, 0, 0);
 }
 
 #errorMsg {
@@ -37,19 +37,19 @@ input.error {
     display: flex;
     justify-content: space-between;
     padding: 9px;
-    border-bottom: 1px solid #5e5e5e;
+    border-bottom: 2px solid #000000;
 }
 
 .done {
     text-decoration: line-through;
-    color: gray;
+    color: rgb(0, 0, 0);
 }
 
 button {
     margin-left: 10px;
     padding: 10px 10px;
     border-radius: 10px;
-    background-color:rgb(252, 216, 248)
+    background-color:rgb(255, 255, 255)
 }
 
 .hidden {
